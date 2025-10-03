@@ -1,0 +1,194 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  background: #f0f0f0;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.notes-count {
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  color: #666;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background: #fafafa;
+}
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.welcome-screen h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.welcome-screen p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: #2196F3;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1976D2;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+}
+
+.btn-large {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6;
+    background-color: #2f2f2f;
+  }
+
+  .app {
+    background: #2f2f2f;
+  }
+
+  .app-header {
+    background: #1e1e1e;
+    color: #f6f6f6;
+  }
+
+  .app-header h1 {
+    color: #f6f6f6;
+  }
+
+  .sidebar {
+    background: #1e1e1e;
+    border-right-color: #3f3f3f;
+  }
+
+  .notes-count {
+    background: #2a2a2a;
+    color: #ccc;
+    border-bottom-color: #3f3f3f;
+  }
+
+  .main-content {
+    background: #2f2f2f;
+  }
+
+  .welcome-screen h2 {
+    color: #f6f6f6;
+  }
+
+  .welcome-screen p {
+    color: #ccc;
+  }
+
+  .note-editor,
+  .note-item {
+    background: #1e1e1e;
+    color: #f6f6f6;
+  }
+
+  .note-title-input,
+  .note-content-input {
+    background: #2a2a2a;
+    color: #f6f6f6;
+    border-color: #3f3f3f;
+  }
+
+  .note-item-title {
+    color: #f6f6f6;
+  }
+
+  .note-item-preview {
+    color: #ccc;
+  }
+
+  .note-item.active {
+    background: #1a3a52;
+    border-color: #2196F3;
+  }
+}
+
