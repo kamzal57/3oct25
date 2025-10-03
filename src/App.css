@@ -96,6 +96,39 @@
   max-width: 500px;
 }
 
+.features {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.feature p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
 .btn {
   padding: 10px 20px;
   border: none;
@@ -162,6 +195,14 @@
   }
 
   .welcome-screen p {
+    color: #ccc;
+  }
+
+  .feature h3 {
+    color: #f6f6f6;
+  }
+
+  .feature p {
     color: #ccc;
   }
 

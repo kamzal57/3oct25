@@ -40,7 +40,7 @@ function NoteEditor({ note, onSave, onCancel }) {
         />
         <textarea
           className="note-content-input"
-          placeholder="Write your note here..."
+          placeholder="Write your note here... (Markdown supported: **bold**, *italic*, # heading, - list)"
           value={content}
           onChange={(e) => setContent(e.target.value)}
           rows={15}
